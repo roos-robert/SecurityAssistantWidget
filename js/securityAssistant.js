@@ -1,7 +1,6 @@
 // Server-URL with static files
-var serverURL = "https://lab.xenolith.se/";
-// var serverURL = "";
-//console.log(document.location.href);
+//var serverURL = "https://lab.xenolith.se/";
+ var serverURL = "./";
 // Lab-settings for SA
 const securityAssistantParameters = document.querySelector('#securityAssistant');
 
@@ -19,7 +18,7 @@ function getRandomInt(max) {
 
 // Init for the dependencies for the chat to work
 function initDependencies() {
-    append('<link id="secAssistantStyleSheet" rel="stylesheet" type="text/css" href="'+serverURL+'css/securityAssistant.min.css">', 'body');
+    append('<link id="secAssistantStyleSheet" rel="stylesheet" type="text/css" href="'+serverURL+'css/securityAssistant.css">', 'body');
     append('<script type="text/x-template" id="modal-template"> <transition name="secAssistant-modal"> <div class="secAssistant-modal-mask">'
     + '<div class="secAssistant-modal-wrapper"> <div class="secAssistant-modal-container"> '
     + ' <div class="secAssistant-modal-header">  <div style="float: right"><a class="btn-secAssistant btn-danger-secAssistant" @click="$emit(\'close\')"> X </a></div><slot name="header">  </slot>'
