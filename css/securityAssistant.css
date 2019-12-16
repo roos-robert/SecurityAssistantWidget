@@ -1,0 +1,222 @@
+@import "https://fonts.googleapis.com/css?family=Nunito:400,600,700";
+
+.secAssistant-modal-mask {
+    position: fixed;
+    z-index: 9998;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: table;
+    transition: opacity .3s ease;
+    font-family: 'Nunito',Helvetica,Arial,sans-serif;
+}
+
+.secAssistant-modal-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.secAssistant-modal-container {
+    max-width: 1280px;
+    max-height: 800px;
+    /* max-width: 960px;
+    max-height: 550px; */
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.33);
+    transition: all .3s ease;
+    font-family: 'Nunito',Helvetica,Arial,sans-serif;
+}
+
+.secAssistant-modal-header h3 {
+    margin-top: 0;
+    color: #000;
+}
+
+.secAssistant-modal-body {
+    margin: 20px 0;
+    max-height: 650px;
+    font-size: 16px;
+    overflow: auto;
+}
+
+.secAssistant-modal-header h2 {
+    font-size: 32px;
+    margin: 20px 0;
+    font-family: 'Nunito',Helvetica,Arial,sans-serif;
+}
+
+.secAssistant-header-h3 {
+  font-size: 26px;
+  margin: 20px 0;
+  font-family: 'Nunito',Helvetica,Arial,sans-serif;
+}
+
+.secAssistant-header-h4 {
+  font-size: 22px;
+  margin: 20px 0;
+  font-family: 'Nunito',Helvetica,Arial,sans-serif;
+}
+
+.secAssistant-test {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.secAssistant-modal-default-button {
+    float: right;
+}
+
+.secAssistant-modal-enter {
+    opacity: 0;
+}
+
+.secAssistant-modal-leave-active {
+    opacity: 0;
+}
+
+.secAssistant-modal-enter .secAssistant-modal-container .secAssistant-modal-leave-active .secAssistant-modal-container {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+    .btn-secAssistant {
+        border-width: 2px;
+        background-color: transparent;
+        font-weight: 400;
+        opacity: .8;
+        filter: alpha(opacity=80);
+        padding: 8px 16px;
+        border-color: #888;
+        color: #888;
+        cursor: pointer;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-decoration: none;
+        font-family: 'Nunito',Helvetica,Arial,sans-serif;
+    }
+    
+    .btn-primary-secAssistant {
+        font-family: 'Nunito',Helvetica,sans-serif,Arial,Tahoma !important;
+        font-size: 15px;
+        color: #fff !important;
+        background-color: #178de5;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    
+        .btn-primary-secAssistant:hover, .btn-primary-secAssistant:focus, .btn-primary-secAssistant:active, .btn-primary-secAssistant.active {
+            background-color: #0069d9;
+            color: #fff;
+        }
+
+    .btn-danger-secAssistant {
+        font-family: 'Nunito',Helvetica,sans-serif,Arial,Tahoma !important;
+        font-size: 15px;
+        color: #fff !important;
+        background-color: #f96868;
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    
+        .btn-danger-secAssistant:hover, .btn-danger-secAssistant:focus, .btn-danger-secAssistant:active, .btn-danger-secAssistant.active {
+            background-color: #e05d5d;
+
+            color: #fff;
+        }
+
+        .btn-warning-secAssistant {
+          font-family: 'Nunito',Helvetica,sans-serif,Arial,Tahoma !important;
+          font-size: 15px;
+          color: #000 !important;
+          background-color: #ffc107;
+          opacity: 1;
+          filter: alpha(opacity=100);
+      }
+      
+          .btn-warning-secAssistant:hover, .btn-warning-secAssistant:focus, .btn-warning-secAssistant:active, .btn-warning-secAssistant.active {
+              background-color: #e0a800;
+  
+              color: #000;
+          }
+
+        .checkmark__circle {
+            stroke-dasharray: 166;
+            stroke-dashoffset: 166;
+            stroke-width: 50;
+            stroke-miterlimit: 10;
+            stroke: #7ac142;
+            fill: none;
+            animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+          }
+          
+          .checkmark {
+            width: 156px;
+            height: 156px;
+            border-radius: 50%;
+            display: block;
+            stroke-width: 2;
+            stroke: #fff;
+            stroke-miterlimit: 10;
+            margin: 4% auto;
+            box-shadow: inset 0px 0px 0px #7ac142;
+            animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+          }
+          
+          .checkmark__check {
+            transform-origin: 50% 50%;
+            stroke-dasharray: 48;
+            stroke-dashoffset: 48;
+            animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+          }
+          
+          @keyframes stroke {
+            100% {
+              stroke-dashoffset: 0;
+            }
+          }
+          @keyframes scale {
+            0%, 100% {
+              transform: none;
+            }
+            50% {
+              transform: scale3d(1.1, 1.1, 1);
+            }
+          }
+          @keyframes fill {
+            100% {
+              box-shadow: inset 0px 0px 0px 30px #7ac142;
+            }
+          }
+
+          .modalImage {
+            max-width: 450px; float: left; margin-right: 40px;
+          }
+
+          @media only screen and (max-width: 600px) {
+            .modalImage {
+              max-width: 100%; margin-bottom: 10px;
+            }
+
+            .btn-secAssistant {
+              display: block;
+            }
+
+            .secAssistant-modal-wrapper {
+              vertical-align: top;
+            }
+
+            .secAssistant-modal-container {
+              max-height: 500px;
+              padding: 10px;
+            }
+
+            .secAssistant-modal-body {
+              max-height: 400px;
+            }
+          }
